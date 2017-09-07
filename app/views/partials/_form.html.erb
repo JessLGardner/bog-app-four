@@ -1,0 +1,11 @@
+<div class="form-group">
+        <%= form_for @creature do |f| %>
+            <%= f.label :name %><br/>
+            <%= f.text_field :name %><br/>
+    
+            <%= f.label :description %><br/>
+            <%= f.text_field :description %><br/>
+            <br/>
+            <%= f.submit %>
+        <% end %>
+    </div>

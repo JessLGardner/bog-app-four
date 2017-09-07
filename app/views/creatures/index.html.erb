@@ -1,0 +1,9 @@
+<h1>Teh Creatures <%= link_to  "(+)", new_creature_path %></h1>
+<br/>
+<% @creatures.order("created_at ASC").each do |creature| %>
+    <div>
+        <h4><%= link_to creature.name, creature_path(creature.id) %></h4>
+        <p><%= creature.description %></p>
+        <br/>
+    </div>
+<% end %>
